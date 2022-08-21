@@ -37,7 +37,7 @@ function GamePage(props) {
   }, [minutes, seconds]);
 
   return (
-    <styled.BigBox>
+    <styled.BigBox2>
       <styled.BigYadon
         onClick={onIncrease}
         src={process.env.PUBLIC_URL + "/yadon.png"}
@@ -48,7 +48,7 @@ function GamePage(props) {
           {minutes} : {seconds < 10 ? `0${seconds}` : seconds}
         </div>
       </styled.LeftTime>
-    </styled.BigBox>
+    </styled.BigBox2>
   );
 }
 

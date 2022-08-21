@@ -6,7 +6,7 @@ function ResultPage(props) {
   const navigate = useNavigate();
 
   function GotoHome() {
-    navigate("/");
+    navigate("/start");
   }
   var myScore = localStorage.getItem("totalScore");
   myScore = JSON.parse(myScore);

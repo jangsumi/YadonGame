@@ -181,7 +181,6 @@ export const BigYadon = styled.img`
   padding: 87px 140px 12px 140px;
 `;
 
-
 export const Score = styled.div`
   padding: 12px 0px 0px 0px;
   font-style: normal;
@@ -300,3 +299,10 @@ export const ResultHomebutton = styled.div`
   align-items: center;
   color: #ff728a;
 `;
+
+export const BigBox2 = styled.div`
+  height: 400px;
+  width: 400px;
+  border: 1px solid black;
+  cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'  width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👋</text></svg>") 16 0, auto;
+}`;
