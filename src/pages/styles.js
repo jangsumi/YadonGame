@@ -1,6 +1,31 @@
 import styled from "styled-components";
 
-export const YadonBox = styled.img``;
+export const YadonBox = styled.img`
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  left: 165px;
+  top: 165px;
+`;
+
+export const LoadingText = styled.div`
+  position: absolute;
+  width: 141px;
+  height: 17px;
+  left: 131px;
+  top: 235px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+
+  text-align: center;
+
+  color: #000000;
+`;
 
 export const BigBox = styled.div`
   height: 400px;
@@ -69,6 +94,10 @@ export const GameStart = styled.div`
   margin: 30px 50px 0px 0px;
 `;
 
+export const MenuBox = styled.div`
+  display: flex;
+`;
+
 export const MenuTitle = styled.div`
   font-family: "Inter";
   font-style: normal;
@@ -76,6 +105,25 @@ export const MenuTitle = styled.div`
   font-size: 30px;
   line-height: 36px;
   padding: 91px 0px 0px 48px;
+`;
+
+export const HomeButton = styled.div`
+  padding: 10px 0px 10px 0px;
+  width: 90px;
+  height: 20px;
+  // background: #ff728a;
+  border: 2px solid #ff728a;
+  border-radius: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff728a;
+  margin: 85px 28px 0px 50px;
 `;
 
 export const Line1 = styled.div`
@@ -133,6 +181,7 @@ export const BigYadon = styled.img`
   padding: 87px 140px 12px 140px;
 `;
 
+
 export const Score = styled.div`
   padding: 12px 0px 0px 0px;
   font-style: normal;
@@ -182,4 +231,72 @@ export const Ranking2 = styled.div`
 `;
 export const Ranking3 = styled.div`
   padding: 0px 10px 0px 10px;
+`;
+
+export const ResultBox = styled.div``;
+
+export const ResultImage = styled.img`
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 140px;
+  top: 87px;
+`;
+
+export const ResultMessage = styled.img`
+  position: absolute;
+  width: 90px;
+  height: 72px;
+  left: 256px;
+  top: 40px;
+`;
+
+export const ResultTitle = styled.div`
+  position: absolute;
+  width: 300px;
+  height: 30px;
+  left: 70px;
+  top: 242px;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 30px;
+
+  color: #000000;
+`;
+
+export const HomeBox = styled.div`
+  display: flex;
+  padding: 313px 0px 0px 0px;
+`;
+
+export const ResultScore = styled.div`
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 19px;
+
+  color: #000000;
+  padding: 13px 30px 0px 100px;
+`;
+
+export const ResultHomebutton = styled.div`
+  padding: 10px 0px 10px 0px;
+  width: 90px;
+  height: 20px;
+  // background: #ff728a;
+  border: 2px solid #ff728a;
+  border-radius: 50px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ff728a;
 `;
