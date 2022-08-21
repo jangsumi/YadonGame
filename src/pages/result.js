@@ -17,9 +17,28 @@ function ResultPage(props) {
     <styled.BigBox>
       <styled.ResultBox>
         <styled.ResultImage src={process.env.PUBLIC_URL + "/yadon.png"} />
-        <styled.ResultMessage src={process.env.PUBLIC_URL + "/message1.png"} />
+
+        {myScore.score < 10 ? (
+          <styled.ResultMessage
+            src={process.env.PUBLIC_URL + "/message2.png"}
+          />
+        ) : (
+          <styled.ResultMessage
+            src={process.env.PUBLIC_URL + "/message1.png"}
+          />
+        )}
       </styled.ResultBox>
-      <styled.ResultTitle>{myName.name}의 파워는 굉장했다!</styled.ResultTitle>
+
+      {myScore.score < 10 ? (
+        <styled.ResultTitle>
+          {myName.name}의 파워는 미미했다.
+        </styled.ResultTitle>
+      ) : (
+        <styled.ResultTitle>
+          {myName.name}의 파워는 굉장했다!
+        </styled.ResultTitle>
+      )}
+
       <styled.HomeBox>
         <styled.ResultScore>총 {myScore.score}회</styled.ResultScore>
         <styled.ResultHomebutton onClick={GotoHome}>
